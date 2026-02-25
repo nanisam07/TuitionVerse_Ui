@@ -34,13 +34,7 @@ export default function Hero() {
         {/* LEFT COLUMN: CONTENT */}
         <motion.div initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: 0.1 } } }}>
           
-          <motion.div variants={fadeUp} className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/80 px-4 py-1.5 text-sm font-semibold text-blue-700 backdrop-blur-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
-            </span>
-            Trusted by 2,000+ parents in Dehradun
-          </motion.div>
+          
 
           <motion.h1 variants={fadeUp} className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-slate-900 leading-[1.1]">
             Find the Perfect <br />
@@ -96,7 +90,7 @@ export default function Hero() {
                 <div className="relative group">
                   <GraduationCap className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-blue-500 transition-colors" />
                   <select className="w-full pl-11 pr-4 py-3.5 rounded-2xl border-none bg-white text-sm shadow-sm ring-1 ring-slate-200 focus:ring-2 focus:ring-blue-500 outline-none appearance-none cursor-pointer">
-                    <option disabled selected>Select Grade & Curriculum</option>
+                    <option>Select Grade & Curriculum </option>
                     <option >Class 4-6 (CBSE)</option>
                     <option>Class 7-8 (CBSE)</option>
                     <option>Class 9 – 10 (ICSE/CBSE)</option>
