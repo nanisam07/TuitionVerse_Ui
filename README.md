@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tuitionverse – Frontend Platform
 
+Modern, responsive, and high-performance frontend for the Tuitionverse home-tutor discovery platform.
+
+This project is built with a product-first approach, focusing on performance, scalability, clean UI, and a conversion-oriented user experience.
+
+---
+
+## Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- next/font for optimized typography
+
+---
+
+## Key Features
+
+### Hero Section
+- Product-focused layout with live tutor preview
+- Animated headline and staggered content reveal
+- Trust indicators for parent confidence
+- Fully responsive across devices
+
+### Pricing Section
+- Monthly / Yearly toggle
+- Highlighted featured plan
+- Scroll-based reveal animations
+- Mobile-optimized card layout
+
+### UI System
+- Reusable component architecture
+- Consistent spacing, radius, and shadow system
+- Accessible and responsive form controls
+- Optimized typography using next/font
+
+
+## Project Structure
+  app
+├─ layout.tsx
+├─ page.tsx
+├─ globals.css
+└─ fonts.ts
+
+components
+├─ hero
+│ └─ Hero.tsx
+├─ pricing
+│ └─ Pricing.tsx
+└─ ui
+└─ button.tsx
+
+public
+└─ images
+
+---
 ## Getting Started
 
-First, run the development server:
+### 1. Install dependencies
 
 ```bash
+npm install
+2. Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application runs at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Production build
+npm run build
+npm start
 
-## Learn More
+Customization
+Update Pricing Plans
 
-To learn more about Next.js, take a look at the following resources:
+Edit:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+components/pricing/Pricing.tsx
+Update Hero Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit:
 
-## Deploy on Vercel
+components/hero/Hero.tsx
+Theme & Typography
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Edit:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+app/globals.css
+app/fonts.ts
+Deployment
+
+Recommended platform: Vercel
+
+Steps:
+
+Push repository to GitHub
+
+Import project into Vercel
+
+Deploy
+
+Maintainer
+
+Samuel Victor
+Founder - Idea2Site
+
+
+---
+
+# If you want, next I can give you:
+
+A **second internal README for developers** (with setup rules, animation conventions, component guidelines), while keeping this one **client-facing and clean**.
