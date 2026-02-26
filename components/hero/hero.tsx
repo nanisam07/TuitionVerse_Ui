@@ -50,14 +50,45 @@ export default function Hero() {
             tailored to their unique pace.
           </motion.p>
 
-          <motion.div variants={fadeUp} className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button className="h-14 px-8 bg-blue-600 text-white shadow-lg shadow-blue-600/20 hover:bg-blue-700 rounded-2xl text-base font-bold">
-              Find a Tutor Now
-            </Button>
-            <Button variant="outline" className="h-14 px-8 rounded-2xl border-slate-300 bg-white/50 backdrop-blur-sm text-slate-700 hover:bg-white text-base font-semibold">
-              Become a Tutor
-            </Button>
-          </motion.div>
+          <motion.div
+  variants={fadeUp}
+  className="mt-8 flex flex-col gap-4 sm:flex-row"
+>
+  {/* PRIMARY CTA */}
+  <Button
+    className="group relative h-14 px-8 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-base font-semibold
+    shadow-lg shadow-blue-600/25 transition-all duration-300
+    hover:shadow-xl hover:shadow-blue-600/40 hover:-translate-y-0.5 hover:scale-[1.02]"
+  >
+    <span className="relative z-10 flex items-center gap-2">
+      Find a Tutor Now
+    </span>
+
+    {/* Shine sweep */}
+    <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl">
+      <span className="absolute -left-full top-0 h-full w-full bg-gradient-to-r from-transparent via-white/30 to-transparent
+      transition-all duration-700 group-hover:left-full" />
+    </span>
+  </Button>
+
+  {/* SECONDARY CTA */}
+  <Button
+  variant="outline"
+  className="group relative h-14 px-8 rounded-2xl border border-slate-300 bg-white/70 backdrop-blur-md
+  text-slate-800 text-base font-semibold overflow-hidden
+  transition-all duration-300
+  hover:text-white hover:border-white hover:-translate-y-0.5 hover:shadow-md"
+>
+  <span className="relative z-10">Become a Tutor</span>
+
+  {/* Animated fill layer */}
+  <span
+    className="absolute inset-0 bg-gradient-to-r from-black to-black
+    scale-x-0 origin-left transition-transform duration-300
+    group-hover:scale-x-100"
+  />
+</Button>
+</motion.div>
 
           <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-6 items-center border-t border-slate-200/60 pt-8">
              <div className="flex items-center gap-2">
